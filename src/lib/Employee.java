@@ -58,12 +58,16 @@ public class Employee {
 			return;
 		}
 
-		if (grade == 1) {
-			monthlySalary = 3000000;
-		} else if (grade == 2) {
-			monthlySalary = 5000000;
-		} else if (grade == 3) {
-			monthlySalary = 7000000;
+		switch (grade) {
+			case 1:
+				monthlySalary = 3000000;
+				break;
+			case 2:
+				monthlySalary = 5000000;
+				break;
+			case 3:
+				monthlySalary = 7000000;
+				break;
 		}
 	}
 	
